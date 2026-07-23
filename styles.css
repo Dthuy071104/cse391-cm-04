@@ -15,8 +15,6 @@
 }
 
 
-/* ===== BODY ===== */
-
 body{
     font-family:Arial, Helvetica, sans-serif;
     background:var(--cm-bg);
@@ -30,27 +28,22 @@ body{
 .cm-header{
 
     background:var(--cm-primary);
-
     color:white;
 
     padding:20px;
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
 }
 
 
 .cm-header h1{
-    margin-bottom:0;
+    margin:0;
 }
 
 
-
-/* ===== NAVIGATION ===== */
+/* ===== NAV ===== */
 
 .cm-nav ul{
 
@@ -59,7 +52,6 @@ body{
     display:flex;
 
     gap:25px;
-
 }
 
 
@@ -95,7 +87,6 @@ body{
 }
 
 
-
 .cm-section{
 
     background:white;
@@ -107,7 +98,6 @@ body{
     border-radius:10px;
 
 }
-
 
 
 .cm-section h2{
@@ -131,7 +121,6 @@ body{
 }
 
 
-
 #categories li{
 
     background:#e9ecef;
@@ -146,13 +135,12 @@ body{
 
 /* ===== PRODUCT GRID ===== */
 
-
 .cm-grid{
 
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
+    repeat(auto-fill,minmax(220px,1fr));
 
     gap:20px;
 
@@ -162,8 +150,7 @@ body{
 
 
 
-/* ===== PRODUCT CARD ===== */
-
+/* ===== CARD ===== */
 
 .cm-card{
 
@@ -177,21 +164,16 @@ body{
 
     background:white;
 
-    transition:0.3s;
-
 }
-
 
 
 .cm-card:hover{
 
     transform:translateY(-5px);
 
-    box-shadow:
-    0 5px 15px rgba(0,0,0,0.15);
+    box-shadow:0 5px 15px #ccc;
 
 }
-
 
 
 .cm-card img{
@@ -205,7 +187,6 @@ body{
 }
 
 
-
 .cm-card-title{
 
     margin:10px 0;
@@ -213,13 +194,11 @@ body{
 }
 
 
-
 .cm-card-category{
 
     color:#666;
 
 }
-
 
 
 .cm-card-price{
@@ -234,7 +213,6 @@ body{
 
 /* ===== TABLE ===== */
 
-
 .cm-table{
 
     width:100%;
@@ -244,7 +222,6 @@ body{
     margin-top:20px;
 
 }
-
 
 
 .cm-table th,
@@ -259,7 +236,6 @@ body{
 }
 
 
-
 .cm-table th{
 
     background:var(--cm-primary);
@@ -269,13 +245,11 @@ body{
 }
 
 
-
 .cm-table tr:nth-child(even){
 
     background:#f8f8f8;
 
 }
-
 
 
 .cm-table img{
@@ -292,13 +266,11 @@ body{
 
 /* ===== FORM ===== */
 
-
 form{
 
     margin-top:20px;
 
 }
-
 
 
 fieldset{
@@ -310,13 +282,11 @@ fieldset{
 }
 
 
-
 label{
 
     font-weight:bold;
 
 }
-
 
 
 input,
@@ -356,7 +326,6 @@ button{
 }
 
 
-
 button:hover{
 
     background:#084298;
@@ -365,8 +334,27 @@ button:hover{
 
 
 
-/* ===== FOOTER ===== */
+/* ===== ABOUT ===== */
 
+#about{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+
+
+/* ===== FOOTER ===== */
 
 .cm-footer{
 
@@ -386,9 +374,7 @@ button:hover{
 
 /* ===== MOBILE ===== */
 
-
 @media(max-width:600px){
-
 
     .cm-header{
 
@@ -402,8 +388,6 @@ button:hover{
     .cm-nav ul{
 
         flex-direction:column;
-
-        text-align:center;
 
     }
 
